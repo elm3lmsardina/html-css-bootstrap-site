@@ -1,0 +1,352 @@
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.tblack
+{
+    color: black;
+}
+.tgray
+{
+    color: #787878;
+}
+
+.bg-mynav
+{
+    background-color:white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.vl {
+    border: 0.1px solid  #eee;
+    height: 60px ;
+  }
+
+.home 
+{
+    background-image: url(../images/bg-image-28.jpg);
+    background-size: cover;
+    
+    height: 100vh;
+}
+.homelayer
+{
+    background-color: rgb(0, 0, 0, 0.5);
+position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.layercontent
+{
+    color: white;
+    text-align: center;
+
+}
+
+
+.layercontent p 
+{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+
+
+.layercontent button
+{
+   color: white;
+}
+
+.btn1{
+    transition: transform 0.4s;
+}
+.btn1:hover{
+    transform: translatey(-2px);
+}
+
+
+/**who we are **/
+
+.WWA {
+    height: auto;
+   
+
+}
+
+
+.WWA .word::after
+{
+
+    content: "";
+
+animation-name: typingword;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+color:#0dcaf0;;
+}
+
+
+@keyframes typingword
+{
+
+   0% { content: "a|"; }
+   2% { content: "ap|"; }
+   4% { content: "app|"; }
+   6% { content: "apps|"; }
+   8% { content: "app|"; }
+   14% { content: "ap|"; }
+   12% { content: "a|"; }
+   14% { content: "|"; }
+   16% { content: "w|"; }
+   18% { content: "we|"; }
+   20% { content: "web|"; }
+   22% { content: "webs|"; }
+   24% { content: "websi|"; }
+   26% {content: "websit|";}
+   28% { content: "website|"; }
+   30% { content: "websit|"; }
+   32% { content: "websi|"; }
+   34% { content: "webs|"; }
+   36% { content: "web|"; }
+   38% { content: "we|";}
+   40% {content: "w|";}
+   42% { content: "|"; }
+   44% { content: "s|"; }
+   46% { content: "so|"; }
+   48% { content: "sof|"; }
+   50% { content: "soft|"; }
+   52% { content: "softw|"; }
+   54% { content: "softwa|"; }
+   56% { content: "softwar|"; }
+   58% { content: "software|"; }
+   60% { content: "softwares|"; }
+   62% { content: "software|"; }
+   64% { content: "softwar|"; }
+   68% { content: "softwa|"; }
+   70% { content: "softw|"; }
+   72% { content: "soft|"; }
+   74% { content: "sof|"; }
+   76% { content: "so|"; }
+   78% { content: "s|"; }
+   100%{content: "|";}
+}
+
+/**team**/
+
+.team {
+    border-top: 1px solid #eee;
+}
+
+.layer{
+    position: absolute;
+    background-color: #12BFD3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    transition: 0.5s all;
+   
+
+}
+.team h1{
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+
+}
+.team h1::after{
+    content: "C";
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    z-index: -1;
+    bottom: -10px;
+    opacity: 0.06;
+    
+}
+
+ 
+
+.layertext
+{
+    transform: translateY(30px);
+    transition: 0.5s all;
+    
+ 
+}
+
+
+
+.biglayer:hover .layer {
+    opacity: 0.8;
+}
+
+.biglayer:hover .layer .layertext{
+    transform: translateY(0px);
+}
+button{
+    transition: transform 0.4s;
+}
+button:hover{
+    transform: translatey(-2px);
+}
+
+
+
+/**WWD**/
+
+.WWD{
+    background-color: #626262;
+    color: white;
+    
+}
+
+.WWD .circle{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+
+}
+.WWD ul li{
+    font-size: 14px;
+}
+.WWD h2{
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+
+}
+
+.WWD h2::after{
+    content: "W";
+    position: absolute;
+    left: -7PX;
+    right: 0;
+    font-size: 2em;
+    z-index: -1;
+    bottom: 12px;
+    opacity: 0.06;
+    
+}
+
+/***prices**/
+.prices {
+    background-color: #F7F7F7;
+}
+
+.prices .content{
+    background-color: white;
+}
+
+
+.prices button
+{
+    background-color: #12BFD3;
+    color: white;
+
+}
+.prices h1{
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+
+}
+.prices h1::after{
+    content: "C";
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    z-index: -1;
+    bottom: -10px;
+    opacity: 0.06;
+    
+}
+
+
+/* Customers */
+.reviews 
+{
+    background-color: #F7F7F7;
+}
+.reviews  .image img{
+    width: 90px;
+    transform: translateY(50%);
+}
+
+
+.carousel-indicators.reviews-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin-top: 20px;
+}
+.reviews  .cur-control-prev{
+    left: -20%;
+} 
+.reviews  .cur-control-next{
+    right: -20%;
+} 
+.reviews  .cur-icon {
+    color: black;
+}
+.reviews  .cur-icon:hover {
+    color:#12BFD3 ;
+}
+.cur-control:hover .cur-icon{
+    color:#12BFD3 ;
+}
+.cur-icon-prev{
+    transition: transform 0.4s;
+}
+.cur-icon-prev:hover{
+    transform: translateX(-2px);
+}
+.cur-icon-next{
+    transition: transform 0.4s;
+}
+.cur-icon-next:hover{
+    transform: translateX(2px);
+}
+
+
+
+
+
+/***map**/
+
+.map h2{
+    position: relative;
+    z-index: 99;
+    font-weight: bold;
+
+}
+.map h2::after{
+    content: "G";
+    position: absolute;
+    left: -10PX;
+    right: 0;
+    font-size: 2em;
+    z-index: -1;
+    bottom: -10px;
+    opacity: 0.06;
+    
+}
+
